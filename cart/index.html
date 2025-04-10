@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Cart</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Shopify</div>
+      <ul>
+        <li><a href="/welcome/index.html">Home</a></li>
+        <!-- <li><a href="/login/login.html">Login</a></li>
+          <li><a href="/sign up/index.html">Signup</a></li> -->
+        <li><a href="/shop/index.html">Shop</a></li>
+        <li><a href="/profile/index.html">Profile</a></li>
+      </ul>
+    </nav>
+
+    <h1 style="text-align: center; margin-top: 80px">My Cart</h1>
+    <div class="empty-container" id="emptyCart">
+      <h1>Cart is Empty</h1>
+    </div>
+    <div class="cart-container" id="cartContainer">
+      <div class="cart-items" id="cartItems"></div>
+      <div class="checkout" id="checkoutContainer">
+        <h3>Checkout List</h3>
+        <ul class="checkout-list" id="checkList">
+          <li><span>Shirt</span> <span>$100</span></li>
+          <li><span>Shirt</span> <span>$100</span></li>
+          <li><span>Shirt</span> <span>$100</span></li>
+          <li id="total"><strong>Total</strong> <strong>Rs 900/-</strong></li>
+        </ul>
+        <button id="checkout-btn">Click To Checkout</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
