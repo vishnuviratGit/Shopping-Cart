@@ -72,7 +72,7 @@ if (currUser) {
   //logout
   logoutBtn.addEventListener("click", ()=>{
       localStorage.removeItem("currUser");
-      window.location.href="/welcome/index.html";
+      window.location.href="/index.html";
   })
 } else {
   //redirect to login page
